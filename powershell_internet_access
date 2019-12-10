@@ -1,0 +1,6 @@
+mkdir C:\\downloadFiles
+
+[Net.ServicePointManager]::SecurityProtocol +='tls12'
+$sourceNugetExe = "https://dotnetwebsite.azurewebsites.net/download/dotnet-core/scripts/v1/dotnet-install.ps1"
+$targetNugetExe = "C:\\downloadFiles\\dotnet-install.ps1"
+Invoke-WebRequest $sourceNugetExe -OutFile $targetNugetExe
