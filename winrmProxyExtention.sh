@@ -1,5 +1,5 @@
-apt-get -y update
-apt-get install -y tinyproxy
+sudo apt-get -y update
+sudo apt-get install -y tinyproxy
 
 wget -O /tmp/tinyproxy.conf https://raw.githubusercontent.com/renpengzhang/test2/master/tinyproxy.conf
 mv /tmp/tinyproxy.conf /etc/tinyproxy/tinyproxy.conf
